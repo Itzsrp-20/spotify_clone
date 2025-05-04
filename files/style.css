@@ -1,0 +1,203 @@
+.grid-container{
+    position: absolute;
+    display: grid;
+    height: 100vh;
+    width:98.5vi;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 8fr 1.5fr;
+    top: 0px;
+    left: 0px;
+    padding-bottom:11vh;
+}
+
+
+/* contains the main heading of the webpage with name and logo */
+.main{
+    grid-area: 1/1/2/3;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid white;
+}
+.logo{
+    margin-left: 30px;
+}
+.name{
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 80px;
+    color: white;
+    margin-left: 20px;
+}
+/* main ends here */
+
+/* styling of the navbar */
+.navbar{
+    grid-area: 2/1/4/2;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid white;
+}
+.nav{
+    border-style: none;
+    color: white;
+    font-size: large;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+/* styling on navbar ends here */
+
+/* styling of the main content box */
+.content{
+    display: flex;
+    gap: 30px;
+    background-color: black;
+    border-bottom: 2px white solid;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+/* content box ends here */
+
+/* styling of the each cards of the song */
+.card{
+    height: 250px;
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 20%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.shine{
+    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;
+    flex-grow: 0.2;
+}
+.song{
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-style: none;
+    font-weight: 600;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 10px;
+}
+.song_img{
+    position: relative;
+    height: 150px;
+    width:150px;
+    grid-area: 1/1/2/2;
+    border-radius: 10%;
+    
+}
+.info_name{
+    color: white;
+    font-size: large;
+}
+.info_artist{
+    color: rgb(173, 166, 166);
+}
+.hidden{
+    visibility: hidden;
+}
+.song>text{
+   visibility: hidden;
+}
+.save>text{
+    visibility:hidden;
+ }
+.save{
+    display: flex;
+    margin-top: 10px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(33, 145, 33);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.save>img{
+    position: relative;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+}
+/* styling of the song cards end here */
+
+
+.control{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    width: 98.5vi;
+    left: 0px;
+    bottom: 0px;
+    border-top: 2px solid white;
+}
+.but{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(56, 213, 80);
+    border-radius: 50%;
+    border-style:none;
+    display:grid;
+    justify-content: center;
+    align-content: center;
+}
+.play-pause{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+.play{
+    grid-area: 1/2/1/2;
+}
+.pause{
+    grid-area:1/2/1/2;
+}
+.previous,.next{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    border-style: none;
+    display:grid;
+    justify-content: center;
+    align-content: center;
+}
+.previous{
+    margin-left: 50px;
+}
+.bottom-display{
+    width:270px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+.bottom-song-name{
+    height: 2rem;
+    font-size: x-large;
+    font-weight: 400;
+    color: white;
+}
+.bottom-artist-name{
+    font-size: large;
+    font-weight: 200;
+    color:rgb(173, 166, 166);
+}
+.timer{
+    color: white;
+    width: 100px;
+    height: 20px;
+}
